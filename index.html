@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./IMGS/calculadora.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./CSS/estilo.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <main class="view">
+      <div class="calculator">
+        <header id="header">
+          <h2><span class="calc">Calc</span>ulator</h2>
+          <button id="switchTheme" data-theme="dark">
+            <i class="bi bi-moon"></i>
+            <i class="bi bi-brightness-high"></i>
+          </button>
+        </header>
+
+        <div id="display"></div>
+        <section id="buttons-area">
+          <button id="clear">C</button>
+          <button class="buttonCalc btn-(" data-value="(">(</button>
+          <button class="buttonCalc btn-)" data-value=")">)</button>
+          <button class="buttonCalc btn-/" data-value="/">/</button>
+          <button class="buttonCalc btn-7" data-value="7">7</button>
+          <button class="buttonCalc btn-8" data-value="8">8</button>
+          <button class="buttonCalc btn-9" data-value="9">9</button>
+          <button class="buttonCalc btn-*" data-value="*">*</button>
+          <button class="buttonCalc btn-4" data-value="4">4</button>
+          <button class="buttonCalc btn-5" data-value="5">5</button>
+          <button class="buttonCalc btn-6" data-value="6">6</button>
+          <button class="buttonCalc btn-" data-value="-">-</button>
+          <button class="buttonCalc btn-1" data-value="1">1</button>
+          <button class="buttonCalc btn-2" data-value="2">2</button>
+          <button class="buttonCalc btn-3" data-value="3">3</button>
+          <button class="buttonCalc btn+" data-value="+">+</button>
+          <button class="buttonCalc btn-0" data-value="0">0</button>
+          <button class="buttonCalc btn-point" data-value=".">.</button>
+          <button id="delete">del</button>
+          <button id="equal">=</button>
+        </section>
+      </div>
+    </main>
+    <script src="./JS/calc.js"></script>
+  </body>
+</html>
