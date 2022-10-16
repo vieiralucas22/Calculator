@@ -19,13 +19,18 @@ body {
 
 .calculator {
   max-width: 45rem;
-  margin: 6rem auto;
+  margin: 2rem auto;
   padding: 1.5rem;
 }
 #header {
   display: flex;
   justify-content: space-between;
 }
+#header h2 {
+  position: relative;
+  top: 5px;
+}
+
 .calc {
   color: var(--primary-color);
 }
