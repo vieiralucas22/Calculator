@@ -32,7 +32,7 @@ document.querySelectorAll(".buttonCalc").forEach((btn) => {
 function calculate() {
   try {
     const result = eval(display.innerText);
-    if (result) display.innerText = result.toFixed(2);
+    if (result) display.innerText = result;
     if (display.innerText.includes(".")) {
       verificationPoint = 1;
       display.classList.add("success");
